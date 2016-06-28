@@ -1,5 +1,18 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
 }
 div {
     border: 1px solid Chocolate;
@@ -13,4 +26,38 @@ div {
     width: 970px;
     height: 70px;
     margin: 0 auto;
+}
+
+.top-navigation img {
+	height: 70px;
+}
+
+.top-navigation .links {
+	float: right;
+	-webkit-transition: color 2s ease;
+  	-moz-transition: color 2s ease;
+  	-o-transition: color 2s ease;
+  	transition: color 2s ease;
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+
+.top-navigation a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+
+.links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+	margin-top: 8px;
+}
+
+.content {
+	padding: 0px 15px;
 }
