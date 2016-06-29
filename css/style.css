@@ -1,5 +1,4 @@
 html {
-	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 }
 
@@ -8,20 +7,31 @@ html {
 }
 
 body {
-    background-color: LightGray;
     font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
 	letter-spacing: 0.03em;
 }
-div {
-    border: 1px solid Chocolate;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 100;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 250px;
 }
 
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
 }
+
 .top-navigation > .content {
     width: 970px;
     height: 70px;
@@ -34,6 +44,10 @@ div {
 
 .top-navigation .links {
 	float: right;
+	color: #838994;
+	font-size: 16px;
+	margin-top: 25px;
+	-webkit-font-smoothing: antialiased;
 	-webkit-transition: color 2s ease;
   	-moz-transition: color 2s ease;
   	-o-transition: color 2s ease;
@@ -55,9 +69,50 @@ div {
 .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
-	margin-top: 8px;
 }
 
 .content {
 	padding: 0px 15px;
+	margin:0 auto; 
+	width: 970px;
+}
+
+.content h1 {
+	color: white;
+}
+
+.content h3 {
+	color: white;
+}
+
+.introduction {
+	background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+
+button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    width: auto;
+    background-color: darkorange;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+button:hover {
+	background-color: red;
+	cursor: pointer;
+}
+
+.introduction button {
+	margin: 0 auto;
 }
